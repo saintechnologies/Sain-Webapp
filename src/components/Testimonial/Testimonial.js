@@ -36,7 +36,7 @@ class Testimonial extends Component {
                                 <Fade bottom cascade>
                                     <div className="seo_sec_title wow fadeInUp" data-wow-delay="0.3s">
                                         <h2>Check testimonials for<br/> our satisfied clients</h2>
-                                        <p>That ummm I'm telling Why say bleeder smashing lemon squeezy tosser, cheesed off dropped.!</p>
+                                        <p>We had so many requirements and didn't have the tools to execute but this team got it done.</p>
                                     </div>
                                 </Fade>
                                 <div className="slider_nav">

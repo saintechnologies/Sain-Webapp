@@ -88,7 +88,7 @@ class Footer extends Component {
                                 <p className="mb-0 f_400">{FooterData.copywrite}</p>
                             </div>
                             <div className="col-lg-6 col-sm-5 text-right">
-                                <p>Made with <i className="icon_heart"></i> in <a href="/#">DroitThemes</a></p>
+                                <p>Made with <i className="icon_heart"></i></p>
                             </div>
                         </div>
                     </div>

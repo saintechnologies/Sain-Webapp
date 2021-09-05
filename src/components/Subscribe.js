@@ -9,27 +9,9 @@ class Subscribe extends Component {
         let FooterData = this.props.FooterData;
         return(
             <React.Fragment>
-                <section className="seo_subscribe_area">
-                    <div className="overlay_img"></div>
-                    <div className="cloud_img"><img src={require('../img/seo/cloud.png')} alt=""/></div>
-                    <div className="container">
-                        <SeoTitle Title="Check your Website’s SEO!" TitleP="The full monty burke posh excuse my French Richard cheeky bobby spiffing crikeyWhy gormless, pear shaped.!"/>
-                        <form action="#" className="row seo_subscribe_form">
-                            <div className="input-group col-lg-5 col-md-5 col-sm-6">
-                                <input type="url" name="website" id="website" placeholder="Web URL" className="form-control"/>
-                            </div>
-                            <div className="input-group col-lg-5 col-md-4 col-sm-6">
-                                <input type="email" name="email" id="emails" placeholder="Email" className="form-control"/>
-                            </div>
-                            <div className="input-group col-lg-2 col-md-3 col-sm-12">
-                                <input type="submit" name="submit" value="Check" className="check-btn"/>
-                            </div>
-                        </form>
-                    </div>
-                </section>
                 <section className="case_studies_area sec_pad">
                     <div className="container">
-                        <SeoTitle Title="Our case studies" TitleP="The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey Why gormless, pear shaped.!"/>
+                        <SeoTitle Title="Let our work do the talking" TitleP="Brands we've successfully made along the way"/>
                         <StudySlider/>
                     </div>
                 </section>
@@ -75,7 +57,7 @@ class Subscribe extends Component {
                 <section className="seo_partner_logo_area sec_pad">
                     <div className="container">
                         <div className="seo_sec_title text-center mb_70">
-                            <Fade bottom><h2>Relied on marketers, trusted by engineers,<br/> and beloved by executives, everyw here.</h2></Fade>
+                            <Fade bottom><h2>Relied on marketers, trusted by engineers,<br/> and beloved by executives, everywhere.</h2></Fade>
                         </div>
                         <div className="partner_logo_area_four">
                             <div className="row partner_info">

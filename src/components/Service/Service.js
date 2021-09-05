@@ -7,16 +7,17 @@ const Service = () => {
         <React.Fragment>
             <section className="seo_service_area sec_pad">
                 <div className="container">
-                    <SeoTitle Title='How does it work?' TitleP='The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey Why gormless, pear shaped.!'/>
+                    <SeoTitle Title='From idea – to code' TitleP='We bring together the brightest minds in emerging technologies to build awesome, real-world applications'/>
                     <div className="row seo_service_info">
                         <Fade bottom duration={500}>
                             <div className="col-lg-4 col-md-6">
                                 <div className="seo_service_item">
                                     <img src={require('../../img/seo/icon1.png')} alt=""/>
                                     <a href=".#">
-                                        <h4>Digital Analytics</h4>
+                                        <h4>
+Blockchain Research</h4>
                                     </a>
-                                    <p>Twit cras excuse my French matie boy grub it's all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</p>
+                                    <p>Our team of experts work around the clock researching all elements of the blockchain space fulfililling any research inquires at an instituitonal-grade level</p>
                                     <a href=".#"><i className="arrow_right"></i></a>
                                 </div>
                             </div>
@@ -26,9 +27,10 @@ const Service = () => {
                                 <div className="seo_service_item">
                                     <img src={require('../../img/seo/icon2.png')} alt=""/>
                                     <a href=".#">
-                                        <h4>Digital Marketing</h4>
+                                        <h4>
+Blockchain Strategy & Development</h4>
                                     </a>
-                                    <p>Twit cras excuse my French matie boy grub it's all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</p>
+                                    <p>Delivering Enterprise Blockchain solutions and smart contract integration to help bring your company to the pinnacle of innovation</p>
                                     <a href=".#"><i className="arrow_right"></i></a>
                                 </div>
                             </div>
@@ -38,9 +40,9 @@ const Service = () => {
                                 <div className="seo_service_item">
                                     <img src={require('../../img/seo/icon5.png')} alt=""/>
                                     <a href=".#">
-                                        <h4>Email Marketing</h4>
+                                        <h4>Marketing Strategy</h4>
                                     </a>
-                                    <p>Twit cras excuse my French matie boy grub it's all gone to pot off his nut butty horse play blow off pardon you hanky panky.!</p>
+                                    <p>Using our proprietary marketing strategies as well as our industry network, we evaluate the Digital Asset Market and offer personalized and comprehensive results for your project.</p>
                                     <a href=".#"><i className="arrow_right"></i></a>
                                 </div>
                             </div>
@@ -64,20 +66,22 @@ const Service = () => {
                         <div className="col-lg-6">
                             <Fade bottom cascade>
                                 <div className="seo_features_content">
-                                    <h2>Get tips & tricks on how to skyrocket your sales.</h2>
-                                    <p>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
+                                    <h2>What We Can Build For You. Any niche. In minutes.</h2>
+                                    <p>Let us prepare you for your journey by planning a focused strategy, designing a fresh brand, developing an innovative technology solution, and deploying a successful MVP - freeing you to focus on your business and grow your platform.</p>
                                     <div className="media seo_features_item">
                                         <div className="icon"><img src={require('../../img/seo/icon4.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Reporting & Analysis</h3>
-                                            <p>Naff are you taking the piss say blow off faff about wellies richard.</p>
+                                            <h3>MVP Development</h3>
+                                            <p>We can quickly create, develop, and deploy your minimum viable product (MVP) so you can start building a customer base and launch your business with maximum impact.</p>
                                         </div>
                                     </div>
                                     <div className="media seo_features_item">
                                         <div className="icon two"><img src={require('../../img/seo/icon3.png')} alt=""/></div>
                                         <div className="media-body">
-                                            <h3>Reporting & Analysis</h3>
-                                            <p>Naff are you taking the piss say blow off faff about wellies richard.</p>
+                                            <h3>Software Consulting</h3>
+                                            <p>Wondering why your app is slow? What is the best road-map to follow? How to set up a software architecture? We can help you determine which route to take and the most efficient way to get to where you want to be.
+</p>
+                                            <a href=".#" className="seo_btn seo_btn_one btn_hover wow fadeInUp">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -86,29 +90,7 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            <section className="seo_features_one sec_pad">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="seo_features_img seo_features_img_two">
-                                <div className="round_circle"></div>
-                                <div className="round_circle two"></div>
-                                <img src={require('../../img/seo/features_img_two.png')} alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 d-flex align-items-center">
-                            <Fade bottom cascade>
-                                <div className="seo_features_content">
-                                    <h2 className="wow fadeInUp">Get tips & tricks on how to skyrocket your sales.</h2>
-                                    <h6 className="wow fadeInUp">What a plonker bamboozled so I said say what a load of rubbish owt to do with me haggle.</h6>
-                                    <p className="wow fadeInUp">Cheeky bugger gosh codswallop chap bamboozled blatant cracking goal brown bread, pear shaped cor blimey guvnor easy peasy lemon squeezy hotpot spiffing good time, chancer a spend a penny spiffing I don't want no agro tinkety tonk old fruit.</p>
-                                    <a href=".#" className="seo_btn seo_btn_one btn_hover wow fadeInUp">Learn More</a>
-                                </div>
-                            </Fade>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </React.Fragment>
     )
 }
