@@ -1,115 +1,100 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "reactstrap";
-
-//Import Footer link
-import FooterLinks from "./footer-links";
-
-//Import Images
-import footerlogo from "../../assets/images/logo-dark.png";
-
+import React , {Component} from 'react';
+import {Link} from 'react-router-dom';
+import Reveal from 'react-reveal/Reveal'
 class Footer extends Component {
-  state = {
-    footerItems: [
-      {
-        title: "Product",
-        links: [
-          { linkTitle: "Tranding", link: "/" },
-          { linkTitle: "Popular", link: "#" },
-          { linkTitle: "Job Opening", link: "#" },
-          { linkTitle: "Customers", link: "#" },
-          { linkTitle: "Features", link: "#" },
-        ],
-      },
-      {
-        title: "Company",
-        links: [
-          { linkTitle: "Works", link: "#" },
-          { linkTitle: "Strategy", link: "#" },
-          { linkTitle: "Releases", link: "#" },
-          { linkTitle: "Press", link: "#" },
-          { linkTitle: "Mission", link: "#" },
-        ],
-      },
-      {
-        title: "Learn More",
-        links: [
-          { linkTitle: "Developers", link: "#" },
-          { linkTitle: "Support", link: "#" },
-          { linkTitle: "Customer Service", link: "#" },
-          { linkTitle: "Get Started", link: "#" },
-          { linkTitle: "Guide", link: "#" },
-        ],
-      },
-    ],
-    socialIcons: [
-      { icon: "remixicon-facebook-line", iconLink: "#" },
-      { icon: "remixicon-twitter-line", iconLink: "#" },
-      { icon: "remixicon-instagram-line", iconLink: "#" },
-      { icon: "remixicon-skype-line", iconLink: "#" },
-    ],
-  };
-
-  render() {
-    return (
-      <React.Fragment>
-        {/* FOOTER START  */}
-        <footer className="pt-5 pb-4 position-relative bg-light">
-          <Container className="container">
-            <Row>
-              <Col lg={3}>
-                <div className="footer-about-content mt-4">
-                  <img
-                    src={footerlogo}
-                    alt="footerLogo"
-                    className="img-fluid"
-                  />
-                  <p className="mt-4 text-muted f-15">
-                    Sed ut perspiciatis unde omnis iste a natus error scusantium
-                    doloremque rem explicabo.
-                  </p>
-                  <ul className="list-inline footer-icon mt-4">
-                    {this.state.socialIcons.map((item, key) => (
-                      <li className="list-inline-item h4 mr-4" key={key}>
-                        <Link to={item.iconLink} className="text-purple">
-                          <i className={item.icon} />
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Col>
-              <Col lg={8} className="offset-lg-1">
-                <div className="row">
-                  {this.state.footerItems.map((item, key) => (
-                    <div className="col-md-4" key={key}>
-                      <div className="mt-4">
-                        <h5 className="text-dark footer-title font-weight-medium mb-4">
-                          {item.title}
-                        </h5>
-                        <ul className="list-unstyled footer-sub-menu">
-                          {item.links.map((fLink, key) => (
-                            <li className="f-15 mt-3 mb-3" key={key}>
-                              <Link to={fLink.link} className="text-muted">
-                                {fLink.linkTitle}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+    render(){
+        let FooterData = this.props.FooterData;
+        return(
+            <footer className="new_footer_area bg_color">
+                <div className="new_footer_top">
+                    <div className="container">
+                        <div className="row">
+                            {
+                                FooterData.CompanyWidget.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={1}>
+                                            <div className="col-lg-3 col-md-6" >
+                                                <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s">
+                                                    <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                    <p>{widget.description}</p>
+                                                    <form action="#" className="f_subscribe_two mailchimp" method="post">
+                                                        <input type="text" name="EMAIL" className="form-control memail" placeholder="Email"/>
+                                                        <button className="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                                        <p className="mchimp-errmessage" style={{display: "none"}}></p>
+                                                        <p className="mchimp-sucmessage" style={{display: "none"}}></p>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
+                            {
+                                FooterData.AboutWidget.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
+                                        <div className="col-lg-3 col-md-6">
+                                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s">
+                                                <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                <ul className="list-unstyled f_list">
+                                                    {
+                                                        widget.menuItems.map(item =>{
+                                                            return(
+                                                                <li key={item.id}><Link to="/">{item.text}</Link></li>
+                                                            )
+                                                        })
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
+                            {
+                                FooterData.SocialLinks.map(widget=>{
+                                    return(
+                                        <Reveal effect="fadeInLeft" duration={500} key={widget.id}>
+                                        <div className="col-lg-3 col-md-6">
+                                            <div className="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s">
+                                                <h3 className="f-title f_600 t_color f_size_18">{widget.title}</h3>
+                                                <div className="f_social_icon">
+                                                    {
+                                                        widget.menuItems.map(item =>{
+                                                            return(
+                                                                <Link to="/" key={item.id}><i className={item.icon}></i></Link>
+                                                            )
+                                                        })
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </Reveal>
+                                    )
+                                })
+                            }
+                        </div>
+                        
                     </div>
-                  ))}
+                    <div className="footer_bg">
+                        <div className="footer_bg_one"></div>
+                        <div className="footer_bg_two"></div>
+                    </div>
                 </div>
-              </Col>
-            </Row>
-            <FooterLinks />
-          </Container>
-        </footer>
-
-        {/* FOOTER END  */}
-      </React.Fragment>
-    );
-  }
+                <div className="footer_bottom">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-lg-6 col-sm-7">
+                                <p className="mb-0 f_400">{FooterData.copywrite}</p>
+                            </div>
+                            <div className="col-lg-6 col-sm-5 text-right">
+                                <p>Made with <i className="icon_heart"></i> in <a href="/#">DroitThemes</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        )
+    }
 }
-
 export default Footer;
