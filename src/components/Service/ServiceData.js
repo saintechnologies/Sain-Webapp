@@ -1,5 +1,5 @@
 const ServiceData = {
-    STitle: 'You SaasLand wherever your business agency',
+    STitle: 'You SainCapital wherever your business agency',
     Service: [
         {
             id : 1,
