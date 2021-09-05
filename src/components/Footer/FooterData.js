@@ -163,31 +163,24 @@ const FooterData = {
       {
         id: 1,
         image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
+        description: "While other companies spend weeks or months stuck in the planning phase with flow charts and spreadsheets, this team has the proven process to start developing immediately and give you the results you want fast.",
         authorName: "Phillip Anthropy",
-        authorPost: "UI/UX designer", 
+        authorPost: "Founder", 
       },
       {
         id: 2,
-        image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
-        authorName: "Phillip Anthropy",
-        authorPost: "UI/UX designer", 
+        image: "new/member_02.jpg",
+        description: "No matter what your end goal is for your product: web, mobile, blockchain, or all 3 - they can turn your idea into a reality faster than you think",
+        authorName: "Thomas Isiah",
+        authorPost: "President", 
       },
       {
         id: 3,
-        image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
-        authorName: "Phillip Anthropy",
-        authorPost: "UI/UX designer", 
+        image: "new/member_03.jpg",
+        description: "If you want to move fast with quality work, this team can deliver",
+        authorName: "Adam Smith",
+        authorPost: "VP of Engineering", 
       },
-      {
-        id: 4,
-        image: "new/member_01.jpg",
-        description: "He nicked it hanky panky Eaton naff it's your round quaint cheeky cheers, tomfoolery bonnet posh blimey what a plonker vagabond, zonked Elizabeth give us a bell.?",
-        authorName: "Phillip Anthropy",
-        authorPost: "UI/UX designer", 
-      }
     ],
     aboutLinks: [
       {
